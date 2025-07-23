@@ -1,0 +1,599 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	/* border: 1px solid red; */
+	font-family: "Playfair Display", serif;
+}
+/* Navbar section */
+.Portfolio-container {
+	background-color: #000000;
+	overflow: hidden;
+}
+.Nav-logo {
+	object-fit: cover;
+	background-position: center;
+	height: 4rem;
+	width: 5rem;
+	border-radius: 50%;
+	border-top: 2px solid yellow;
+	border-bottom: 2px solid red;
+}
+.Navbar-row {
+	background: linear-gradient(to bottom, skyblue, pink);
+}
+
+.Navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: linear-gradient(to bottom, skyblue, pink);
+	padding: 10px 20px;
+	z-index: 999;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	height: 4rem;
+}
+
+.desk-menu {
+	display: flex;
+	align-items: center;
+}
+.Menu-link {
+	text-decoration: none;
+	color: black;
+	margin: 1rem;
+}
+.Menu-link:hover {
+	background-color: blueviolet;
+}
+li {
+	list-style: none;
+}
+.Burger {
+	display: none;
+}
+/* Home */
+.Port-img {
+	width: 100%;
+	max-width: 400px;
+	margin: 0 auto;
+	margin-top: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	object-fit: cover;
+	height: 20rem;
+	width: 17rem;
+	border-radius: 50%;
+	border-top: 3px solid red;
+	border-bottom: 2px solid red;
+}
+.Port-img:hover {
+	box-shadow: 1px -50px 147px 1px #00ff66;
+}
+.Port-div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.Home-row {
+	/* justify-content: center; */
+	margin-top: 3rem;
+	height: 100vh;
+	overflow: hidden;
+}
+.Intro-div {
+	height: 100vh;
+	margin-top: 8rem;
+}
+.Intro-div2 {
+	height: 5rem;
+	width: 5rem;
+}
+.First-cap {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Playfair Display", serif;
+	color: #00ff66;
+	margin-bottom: 0;
+	font-size: 1rem;
+}
+.Second-cap {
+	margin-bottom: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Playfair Display", serif;
+	color: #00ff66;
+	font-size: 2rem;
+}
+.Third-cap {
+	margin-top: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Playfair Display", serif;
+	color: #00ff66;
+	font-size: 1rem;
+	margin-top: -1rem;
+}
+.Two-cap {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.Samrat {
+	letter-spacing: 0.2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #00ff66;
+	font-size: 3rem;
+	margin-left: 1rem;
+	margin-top: -2rem;
+	margin-bottom: 0;
+	text-decoration: underline;
+	padding: 0rem;
+}
+.Cv-button {
+	height: 3rem;
+	width: 8rem;
+	border-radius: 20%;
+	background: linear-gradient(to left, skyblue, #00ff66);
+	transition: all 0.3s ease-in-out;
+}
+.Cv-button:hover {
+	transform: scale(1.02);
+	box-shadow: 1px 2px 1px #00ff66;
+}
+.Mail-div-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.Cv-link {
+	color: red;
+	text-decoration: none;
+}
+/* About */
+.About {
+	/* justify-content: center; */
+	height: 100vh;
+	overflow: hidden;
+}
+.Myself {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+	margin-top: -1rem;
+	font-family: "Playfair Display", serif;
+	font-size: 0.9rem;
+}
+.About-description {
+	letter-spacing: 0.1rem;
+	padding: 2rem;
+	color: #00ff66;
+}
+.About-img-div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.About-img {
+	margin: 3rem;
+	object-fit: cover;
+	background-position: center;
+	height: 8rem;
+	width: 8rem;
+	border-radius: 50%;
+	border-top: 2px solid #00ff66;
+	box-shadow: 1px -50px 147px 1px #00ff66;
+	transition: all 0.4s ease-in-out;
+}
+.About-img:hover {
+	transform: scale(1.05);
+}
+/* Projects */
+.Projects {
+	height: 100vh;
+	overflow: hidden;
+}
+.Projects-head {
+	color: #00ff66;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin-top: 5rem;
+	font-size: 1rem;
+}
+.Projects-img {
+	object-fit: cover;
+	background-position: center;
+	height: 10rem;
+	width: 20rem;
+	padding: 1rem;
+}
+.Project-card {
+	margin-top: -2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.Card {
+	height: 20rem;
+	width: 20rem;
+	margin-left: 2rem;
+	border: 1px solid #00ff66;
+	transition: all 0.4s ease-in-out;
+}
+.Card:hover {
+	transform: scale(1.05);
+	box-shadow: 1px 10px 5px 1px #00ff66;
+}
+.Projects-title {
+	color: #00ff66;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.Project-caption {
+	color: #00ff66;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+}
+/* Skills */
+.Skills {
+	margin-top: 8rem;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.progress {
+	height: 1rem;
+	width: 100%;
+}
+.Skill-title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #00ff66;
+}
+.HTML {
+	background: linear-gradient(to left, black, blue);
+}
+.CSS {
+	background: linear-gradient(to left, black, purple);
+}
+.BOOTSTRAP {
+	background: linear-gradient(to left, black, yellow);
+}
+.JAVASCIPTS {
+	background: linear-gradient(to left, black, skyblue);
+}
+.REACT {
+	background: linear-gradient(to left, black, pink);
+}
+.REACT-TESTING {
+	background: linear-gradient(to left, black, red);
+}
+.Skill-head {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(to bottom, Blue, yellow);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: transparent;
+}
+/* CONTACT */
+.Contact {
+	height: 100vh;
+	overflow: hidden;
+}
+.Contact-form {
+	padding: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.Form-group {
+	height: 25rem;
+	width: 30rem;
+}
+.form-control {
+	margin-top: 3rem;
+}
+.Lets-connect {
+	color: #00ff66;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/* FOTTER */
+.footer-row {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	background: linear-gradient(to bottom, pink, white);
+}
+.icons {
+	flex-direction: row;
+	margin: 1rem;
+}
+.copy-right {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+	letter-spacing: 0.1rem;
+	background: linear-gradient(to left, brown, purple);
+	color: transparent;
+	background-clip: text;
+}
+.X {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #00ff66;
+	margin-top: 0.7rem;
+}
+.Logo-h2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(to bottom, Blue, yellow);
+	background-clip: text;
+	color: transparent;
+}
+.footer-col-3 {
+	margin: 0rem;
+	padding: 0rem;
+}
+@media screen and (max-width: 480px) {
+	.desk-menu {
+		display: none;
+	}
+	.Burger {
+		display: block;
+		background-color: red;
+		border-radius: 50%;
+	}
+	.mob-menu {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0rem;
+		font-size: 0.5rem;
+	}
+
+	/* Home */
+	.Port-img {
+		width: 100%;
+		max-width: 400px;
+		margin: 0 auto;
+		margin-top: 2rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		object-fit: cover;
+		height: 16rem;
+		width: 14rem;
+		border-radius: 50%;
+		border-top: 3px solid red;
+		border-bottom: 2px solid red;
+	}
+	.Port-img:hover {
+		box-shadow: 0px -5px 10px 1px #00ff66;
+	}
+
+	.Home-row {
+		display: flex;
+		justify-content: center;
+		height: 80vh;
+		overflow: hidden;
+	}
+	.Port-div {
+		margin-bottom: 3rem;
+	}
+	.Samrat {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family: Georgia, "Times New Roman", Times, serif;
+		color: #00ff66;
+		font-size: 2rem;
+		margin-left: 1rem;
+		margin-top: 0;
+		margin-bottom: 0;
+		text-decoration: underline;
+	}
+	.Intro-div {
+		height: 100vh;
+		margin-top: 0rem;
+	}
+	.Third-cap {
+		margin-top: -1rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+			sans-serif;
+		color: #00ff66;
+		font-size: 1rem;
+		padding: 2rem;
+		padding-top: 0rem;
+	}
+	.Mail-div-button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: -3rem;
+	}
+	.Mail-button {
+		height: 2rem;
+		width: 4rem;
+		border-radius: 45%;
+		background: linear-gradient(to left, skyblue, #00ff66);
+		transition: all 0.3s ease-in-out;
+		margin-top: 0rem;
+	}
+	.Menu-link {
+		text-decoration: none;
+		color: black;
+		margin: 0.3rem;
+	}
+	/* About */
+	.Myself {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 1rem;
+		margin-top: -1rem;
+		font-family: "Playfair Display", serif;
+		font-size: 0.7rem;
+	}
+	/* Projects */
+	.Project-card {
+		display: flex;
+		flex-direction: column;
+	}
+	.Card {
+		height: 10rem;
+		width: 10rem;
+		margin: 1rem;
+		border: 1px solid #00ff66;
+		transition: all 0.3s ease-in-out;
+	}
+	.Projects-title {
+		color: #00ff66;
+		text-decoration: underline;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 0.6rem;
+	}
+	.Project-caption {
+		margin-top: -2rem;
+		color: #00ff66;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 0.5rem;
+	}
+	.Projects-img {
+		object-fit: cover;
+		background-position: center;
+		height: 5rem;
+		width: 10rem;
+		padding: 1rem;
+	}
+	.Projects-head {
+		color: #00ff66;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		margin-top: 5rem;
+		font-size: 0.9rem;
+	}
+	/* Contact */
+	.Contact-form {
+		padding: 1rem;
+		margin-top: -16rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	/* Fotter */
+	.icons {
+		flex-direction: row;
+		margin-left: 2rem;
+	}
+	.footer-row {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 12rem;
+	}
+	.Logo-h2 {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: linear-gradient(to bottom, Blue, yellow);
+		background-clip: text;
+		color: transparent;
+		margin-bottom: 1rem;
+		height: 2rem;
+	}
+	.footer-col-3 {
+		margin-top: -2rem;
+		margin-left: 1rem;
+	}
+	.copy-right {
+		font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+			sans-serif;
+		letter-spacing: 0.1rem;
+		background: linear-gradient(to left, brown, purple);
+		color: transparent;
+		background-clip: text;
+		padding: 2rem;
+	}
+}
+/* Mobile first - default styles apply here */
+
+@media (min-width: 576px) {
+	/* Home */
+	.Port-img {
+		margin-top: 3rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		object-fit: cover;
+		height: 18rem;
+		width: 17rem;
+		border-radius: 50%;
+		border-top: 3px solid red;
+		border-bottom: 2px solid red;
+	}
+	.Port-img:hover {
+		box-shadow: 0px -5px 10px 1px #00ff66;
+	}
+	/* .Intro-div {
+		margin-top: -9rem;
+		margin-left: 0rem;
+	} */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.Port-img {
+		margin-top: 3rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		object-fit: cover;
+		height: 20rem;
+		width: 15rem;
+		border-radius: 50%;
+		border-top: 3px solid red;
+		border-bottom: 2px solid red;
+	}
+	.Port-img:hover {
+		box-shadow: 0px -5px 10px 1px #00ff66;
+	}
+	/* .Intro-div {
+		margin-top: 8rem;
+		margin-left: 0rem;
+	} */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
