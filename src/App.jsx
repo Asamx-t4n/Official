@@ -7,6 +7,23 @@ import "./App.css";
 
 const App = () => {
 	const [isOpen, setIsOpen] = useState(true);
+	const [display, setDisplay] = useState("");
+
+	useEffect(() => {
+		setDisplay("");
+		let index = 0;
+		const text = "SAMRAT";
+		const speed = 500;
+		const interval = setInterval(() => {
+			if (index < text.length) {
+				setDisplay(text.substring(0, index + 1));
+				index++;
+			} else {
+				index = 0;
+			}
+		}, speed);
+		return () => clearInterval(interval);
+	}, []);
 	useEffect(() => {
 		AOS.init({
 			duration: 1000,
@@ -57,7 +74,8 @@ const App = () => {
 						</p>
 						<div className="Two-cap">
 							<p className="Second-cap">I'm </p>
-							<p className="Samrat">Samrat</p>
+							<p className="Samrat">{display}</p>
+							<span>❤️</span>
 						</div>
 
 						<p className="Third-cap">
@@ -65,7 +83,7 @@ const App = () => {
 						</p>
 						<div className="Mail-div-button">
 							<button className="Cv-button">
-								<a href="/SamratBhattarai.pdf" className="Cv-link">
+								<a href="SamratBhattarai.pdf" className="Cv-link">
 									View Cv
 								</a>
 							</button>
